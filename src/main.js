@@ -48,7 +48,6 @@ const uploadStatusEl = document.getElementById('upload-status');
 
 // --- Output Elements ---
 const outPerceptionText = document.getElementById('out-perception-text');
-const outPerceptionImg = document.getElementById('out-perception-img');
 const outRealityText = document.getElementById('out-reality-text');
 const outRealityInsulin = document.getElementById('out-reality-insulin');
 const outRealityLiver = document.getElementById('out-reality-liver');
@@ -93,8 +92,6 @@ mediaUploadEl.addEventListener('change', (e) => {
         }
     };
     uploadStatusEl.classList.remove('hidden');
-    outPerceptionImg.src = event.target.result;
-    outPerceptionImg.parentElement.classList.remove('hidden');
   };
   reader.readAsDataURL(file);
 });

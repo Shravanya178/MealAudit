@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { 
+    font-family: 'Inter', sans-serif; 
+  }
+}
+
+@layer utilities {
+  .clinical-shadow { 
+    box-shadow: 0 0 40px -10px rgba(0, 245, 160, 0.05); 
+  }
+  .pulse-accent { 
+    border-left: 2px solid #00E293; 
+  }
+  .glass-panel { 
+    background: rgba(255, 255, 255, 0.02); 
+    backdrop-filter: blur(20px); 
+  }
+}
